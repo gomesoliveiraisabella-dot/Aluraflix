@@ -1,55 +1,99 @@
-<html lang="pt-BR>
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-     <link rel="stylesheet" href="styles.css">
-     <title>Alura</title>
- </head>
-  
-  <body>
-       <header>ALURAFLIX</header>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ink Vision Tattoo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
- <section>  
-      <div class="chamada-texto">
-            <h1>Charlie Brown Jr - Céu Azul (Clipe Oficial)</h1>
-            <P>#charliebrownjr</P>
+  <header class="hero">
+    <nav class="navbar">
+      <h1 class="logo">INK VISION</h1>
+
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#artistas">Artistas</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content">
+      <h2>Arte na Pele</h2>
+      <p>Tatuagens exclusivas feitas por artistas especializados.</p>
+      <a href="#contato" class="btn">Agendar Sessão</a>
+    </div>
+  </header>
+
+  <section id="sobre" class="section">
+    <h2>Sobre o Estúdio</h2>
+    <p>
+      Somos um estúdio focado em arte autoral, qualidade e experiência.
+      Trabalhamos com estilos realista, fine line, blackwork e aquarela.
+    </p>
+  </section>
+
+  <section id="artistas" class="section dark">
+    <h2>Nossos Tatuadores</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1521119989659-a83eee488004?q=80&w=1200&auto=format&fit=crop" alt="Tattoo Artist">
+        <h3>Lucas Ink</h3>
+        <p>Especialista em realismo preto e cinza.</p>
       </div>
 
-      <div>
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/0dLX40UMUKo?si=p8EvjKHqViRZA0II" title="YouTube video player" frameborder="0"    allow="accelerometer;
-       autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
-        
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1200&auto=format&fit=crop" alt="Tattoo Artist">
+        <h3>Amanda Noir</h3>
+        <p>Fine line e tatuagens minimalistas.</p>
       </div>
- </section>
 
-  </body>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop" alt="Tattoo Artist">
+        <h3>Rafael Skull</h3>
+        <p>Blackwork, old school e tribal.</p>
+      </div>
 
-</html>
+    </div>
+  </section>
 
-<!--Carrossel de imagens-->
-<section class="recomendacoes">
-<h2>Outras recomendações</h2>
-<div class="outras-recomendacoes">
-<a href="https://www.youtube.com/watch?v=NFADwNLNSd4">
-<img src="https://img.youtube.com/vi/NFADwNLNSd4/maxresdefault.jpg" />
-</a>
-<a href="https://www.youtube.com/watch?v=A58wCkPJtIU">
-<img src="https://img.youtube.com/vi/A58wCkPJtIU/maxresdefault.jpg" />
-</a>
-<a href="https://www.youtube.com/watch?v=d4iGRWvlfMY">
-<img src="https://img.youtube.com/vi/d4iGRWvlfMY/maxresdefault.jpg" />
-</a>
-<a href="https://www.youtube.com/watch?v=GNGJV7wFAl0">
-<img src="https://img.youtube.com/vi/GNGJV7wFAl0/maxresdefault.jpg" />
-</a>
-<a href="https://www.youtube.com/watch?v=Df_gGM1h9No">
-<img src="https://img.youtube.com/vi/Df_gGM1h9No/maxresdefault.jpg" />
-</a>
-</div>
-</section>
+  <section id="portfolio" class="section">
+    <h2>Portfólio</h2>
 
-<footer>
-<h4>Desenvolvido por Viviane</h4>
-</footer>
+    <div class="gallery">
 
-</body><!--Fim, corpo do documento-->
+      <img src="https://images.unsplash.com/photo-1542728928-1413d1894ed1?q=80&w=1200&auto=format&fit=crop" alt="Tattoo">
+      <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=1200&auto=format&fit=crop" alt="Tattoo">
+      <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200&auto=format&fit=crop" alt="Tattoo">
+      <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1200&auto=format&fit=crop" alt="Tattoo">
+      <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200&auto=format&fit=crop" alt="Tattoo">
+      <img src="https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?q=80&w=1200&auto=format&fit=crop" alt="Tattoo">
 
+    </div>
+  </section>
+
+  <section id="contato" class="section dark">
+    <h2>Contato</h2>
+
+    <form id="contactForm">
+      <input type="text" placeholder="Seu nome" required />
+      <input type="email" placeholder="Seu e-mail" required />
+      <textarea placeholder="Descreva sua tatuagem..." required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <p id="message"></p>
+  </section>
+
+  <footer>
+    <p>© 2026 Ink Vision Tattoo Studio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
